@@ -1,0 +1,35 @@
+[[interfaces]]
+name = "br107"
+advertise = true
+source_lla = true
+
+  [[interfaces.prefix]]
+  prefix = "2a03:1e80:a00:4302::/64"
+  # "on_link" and "autonomous" true by default.
+  
+  [[interfaces.route]]
+  prefix = "2a03:1e80:0a00:4302::/64"
+
+[[interfaces]]
+name = "veth77"
+advertise = true
+source_lla = true
+
+  [[interfaces.prefix]]
+  prefix = "2a03:1e80:a00:4d01::/64"
+  # "on_link" and "autonomous" true by default.
+  
+  [[interfaces.route]]
+  prefix = "2a03:1e80:a00:4d01::/64"
+  
+[[interfaces]]
+name = "br67"
+advertise = true
+source_lla = true
+
+  [[interfaces.prefix]]
+  prefix = "2a03:1e80:a00:4301::/64"
+  # "on_link" and "autonomous" true by default.
+  
+  [[interfaces.route]]
+  prefix = "2a03:1e80:a00:4301::/64"
